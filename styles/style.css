@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+
+:root {
+  --background-primary: #191724;
+  --background-secondary: #1f1d2e;
+  --background-secondary-alt: #26233a;
+  --channeltextarea-background: #26233a;
+  --background-tertiary: #26233a;
+  --background-accent: #ebbcba;
+  --text-normal: #e0def4;
+  --text-spotify: #9ccfd8;
+  --text-muted: #555169;
+  --text-link: #31748f;
+  --background-floating: #1f1d2e;
+  --header-primary: #e0def4;
+  --header-secondary: #9ccfd8;
+  --header-spotify: #9ccfd8;
+  --interactive-normal: #e0def4;
+  --interactive-hover: #c4a7e7;
+  --interactive-active: #e0def4;
+  --ping: #eb6f92;
+  --brand-experiment: #31748f;
+}
+
+.theme-light {
+  --background-primary: #faf4ed;
+  --background-secondary: #fffaf3;
+  --background-secondary-alt: #f2e9de;
+  --channeltextarea-background: #f2e9de;
+  --background-tertiary: #f2e9de;
+  --background-accent: #d7827e;
+  --text-normal: #575279;
+  --text-spotify: #575279;
+  --text-muted: #6e6a86;
+  --text-link: #286983;
+  --background-floating: #f2e9de;
+  --header-primary: #575279;
+  --header-secondary: #575279;
+  --header-spotify: #56949f;
+  --interactive-normal: #575279;
+  --interactive-hover: #6e6a86;
+  --interactive-active: #575279;
+  --ping: #b4637a;
+  --brand-experiment: #286983;
+}
+
+body {
+  background-color: var(--background-secondary);
+  margin: 0;
+}
+
+nav {
+  width: 100%;
+  height: auto;
+  background: var(--background-tertiary);
+  margin: 0;
+  padding: 0 0;
+}
+
+ul {
+  display: flex;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-link);
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+}
+
+li {
+  margin: 16px;
+}
+
