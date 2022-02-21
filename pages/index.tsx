@@ -3,45 +3,55 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Center } from '../utils/styles/index'
 import '../styles/Home.module.css'
+import { Navbar } from '../components/Navbar';
+import { Search } from '../components/Search';
+import { Categories } from '../components/Categories';
 
 const Home: NextPage = () => {
   return (
+    <>
     <div id="app">
       <article className="full-container">
-        <nav className="navbar">
-          <span className="navbar-toggle" id="js-navbar-toggle">
-                  <i className="fas fa-bars"></i>
-              </span>
-          <a href="#" className="logo">LunarBots</a>
-          <ul className="main-nav" id="js-menu">
-            <li>
-              <a href="#" className="nav-links">Home</a>
-            </li>
-            <li>
-              <a href="#" className="nav-links">Products</a>
-            </li>
-            <li>
-              <a href="#" className="nav-links">About Us</a>
-            </li>
-            <li>
-              <a href="#" className="nav-links">Contact Us</a>
-            </li>
-            <li>
-              <a href="#" className="nav-links">Blog</a>
-            </li>
-          </ul>
-        </nav>
+        <Navbar />
         <Center>
           <header className="main-header">
             <div className="header-container">
               <div className="void-div"><br/><br/></div>
               <h1 className="title-h">Lunar Bots</h1>
+              <Center>
+                <Search />
+              </Center>
+             <Center>
+             <section className='categories'>
+              <Categories
+                name='Moderation'
+                value='moderation'
+              />
+
+              <Categories 
+                name='Fun'
+                value='fun'
+              />
+
+              <Categories 
+                name='Utility'
+                value='utility'
+              />
+
+              <Categories 
+                name='Music'
+                value='music'
+              />
+              </section>
+             </Center>
             </div>
           </header>
+          <hr />
         </Center>
       </article>
     </div>
+    </>
   )
 }
 
-export default Home
+export default Home;

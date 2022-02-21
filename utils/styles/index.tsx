@@ -4,3 +4,7 @@ export const Center = styled.div`
 margin-left: auto;
 margin-right: auto;
 `;
+
+export const CategoryButton = styled.button`
+
+`
