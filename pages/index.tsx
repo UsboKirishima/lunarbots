@@ -6,6 +6,7 @@ import '../styles/Home.module.css'
 import { Navbar } from '../components/Navbar';
 import { Search } from '../components/Search';
 import { Categories } from '../components/Categories';
+import RecentsBots from '../components/RecentsBots';
 
 const Home: NextPage = () => {
   return (
@@ -48,6 +49,9 @@ const Home: NextPage = () => {
           </header>
           <hr />
         </Center>
+        <section className='home_bots'>
+          <RecentsBots />
+        </section>
       </article>
     </div>
     </>
